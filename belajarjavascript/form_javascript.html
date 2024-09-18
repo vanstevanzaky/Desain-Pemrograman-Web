@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <script type="text/javascript">
+            function konfirmasiPengiriman() {
+                return confirm("Apakah Anda yakin ingin mengirimkan form ini?");
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return konfirmasiPengiriman()">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat"></textarea><br><br>
+
+            <label for="tanggal-lahir">Tanggal Lahir</label>
+            <input type="text" id="tanggal-lahir" name="tanggal-lahir"><br><br>
+
+            <label>Jenis Kelamin</label>
+            <input type="radio" name="jenis-kelamin" value="laki-laki"> Laki-laki
+            <input type="radio" name="jenis-kelamin" value="perempuan"> Perempuan<br><br>
+
+            <label>Hobi</label>
+            <input type="checkbox" name="hobi" value="berenang"> Berenang
+            <input type="checkbox" name="hobi" value="berlari"> Berlari
+            <input type="checkbox" name="hobi" value="lain-lain"> Lain-lain<br><br>
+
+            <label>Pekerjaan</label>
+            <input type="checkbox" name="pekerjaan" value="swasta"> Swasta
+            <input type="checkbox" name="pekerjaan" value="pns"> PNS
+            <input type="checkbox" name="pekerjaan" value="lain-lain"> Lain-lain<br><br>
+
+            <input type="checkbox" name="persetujuan" value="ya"> Check jika Anda akan mengirimkan data ini<br><br>
+
+            <input type="submit" value="Cek!">
+        </form>
+    </body>
+</html>
