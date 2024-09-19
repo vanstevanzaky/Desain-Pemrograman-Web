@@ -15,6 +15,11 @@ $hasilLebihKecil = $a < $b;
 $hasilLebihBesar = $a > $b;
 $hasilLebihKecilSama =  $a <= $b;
 $hasilLebihBesarSama = $a >= $b;
+
+$hasilAnd =  $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
 ?>
 <?php
 echo"Hasil Tambah = {$hasilTambah}<br>";
@@ -30,4 +35,10 @@ echo "Hasil Lebih Kecil = {$hasilLebihKecil}<br>";
 echo "Hasil Lebih Besar = {$hasilLebihBesar}<br>";
 echo "Hasil Lebih Kecil Sama = {$hasilLebihKecilSama}<br>";
 echo "Hasil Lebih Besar Sama = {$hasilLebihBesarSama}<br>";
+
+echo "Hasil And = {$hasilAnd}<br>";
+echo "Hasil Or = {$hasilOr}<br>";
+echo "Hasil Not A = {$hasilNotA}<br>";
+echo "Hasil Not B = {$hasilNotB}<br>";
+
 ?>
