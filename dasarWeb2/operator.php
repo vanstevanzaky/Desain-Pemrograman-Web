@@ -27,6 +27,8 @@ $hasilKliPngsn = $a *= $b;
 $hasilBgPngsn = $a /= $b;
 $hasilSsBgPngsn = $a %= $b;
 
+$hasilIdentik = $a === $b;
+$hasilTidakIndentik = $a !== $b;
 ?>
 <?php
 echo"Hasil Tambah = {$hasilTambah}<br>";
@@ -53,5 +55,8 @@ echo "Hasil Kurang Penugasan (a -= b) = {$hasilKrgPngsn}<br>";
 echo "Hasil Kali Penugasan (a *= b) = {$hasilKliPngsn}<br>";
 echo "Hasil Bagi Penugasan (a /= b) = {$hasilBgPngsn}<br>";
 echo "Hasil Sisa Bagi Penugasan (a %= b) = {$hasilSsBgPngsn}<br>";
+
+echo "Hasil Identik dari a === b adalah  {$hasilIdentik}<br>";
+echo "Hasil Tidak Identik dari a !== b adalah {$hasilTidakIndentik}<br>";
 
 ?>
