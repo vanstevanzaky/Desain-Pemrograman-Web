@@ -60,3 +60,13 @@ echo "Hasil Identik dari a === b adalah  {$hasilIdentik}<br>";
 echo "Hasil Tidak Identik dari a !== b adalah {$hasilTidakIndentik}<br>";
 
 ?>
+
+<?php
+$Kursiawal = 45;
+$KursiTerpakai = 28;
+$KursiKosong = $Kursiawal - $KursiTerpakai;
+$KursiKosongPersen =($KursiKosong/$Kursiawal) * 100 ;
+?>
+<?php
+echo "Kursi Kosong = {$KursiKosongPersen} %";
+?>
