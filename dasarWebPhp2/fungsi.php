@@ -27,3 +27,24 @@ $ucapanSalam = "Selamat pagi";
 
 perkenalan($saya, $ucapanSalam);
 ?>
+
+<?php
+function perkenalan1($nama, $salam="Assalamualaaikum"){
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya ". $nama."<br/>";
+    echo "Senang berkenalan dengan Anda";
+}
+perkenalan1("Hamdana","Hallo");
+echo"<hr>";
+$ucapanSalam = "Selamat pagi";
+perkenalan1($saya);
+?>
+
+<?php
+echo"<br>";
+function hitungUmur($thn_lahir, $thn_sekarang){
+    $umur = $thn_sekarang - $thn_lahir;
+    return $umur;
+}
+echo"Umur saya adalah " . hitungUmur(2004, 2024);
+?>
