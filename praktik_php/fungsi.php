@@ -23,3 +23,30 @@ $saya = "Zaky Stevan";
 $ucapanSalam = "Selamat pagi";
 
 perkenalan1($saya, $ucapanSalam);
+
+echo "<br>";
+echo "<br>";
+function perkenalan2($nama, $salam="Assalamualaaikum"){
+    echo $salam.", ";
+    echo "Perkenalkan, nama saya ". $nama."<br/>";
+    echo "Senang berkenalan dengan Anda";
+}
+perkenalan2("Zaky","Hallo");
+echo"<hr>";
+$saya = "Stevan";
+$ucapanSalam = "Selamat pagi";
+perkenalan2($saya);
+
+echo "<br>";
+echo "<br>";
+
+function hitungUmur($thn_lahir, $thn_sekarang){
+    $umur = $thn_sekarang - $thn_lahir;
+    return $umur;
+}
+echo"Umur saya adalah " . hitungUmur(2004, 2024);
+echo "<br>";
+
+
+
+
