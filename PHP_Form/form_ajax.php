@@ -45,7 +45,7 @@
 
                 $.ajax({
                     url: "proses_lanjut.php",
-                    type: "POST"
+                    type: "POST",
                     data: formData,
                     success: function(response) {
                         $("#hasil").html(response);
