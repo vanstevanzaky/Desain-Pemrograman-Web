@@ -26,13 +26,13 @@
             <tbody>
                 <?php
                     $QueryJabatan = "SELECT * FROM menjabat ORDER BY created_at ASC";
-                    $stmt = sqlsrv_query($koneksi, $QueryJabatan);
+                    $pernyataan = sqlsrv_query($koneksi, $QueryJabatan);
 
-                    if ($stmt === false) {
+                    if ($pernyataan === false) {
                         die("Query failed: " . print_r(sqlsrv_errors(), true));
                     }
                     $no = 1;
-                    while ($baris = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
+                    while ($baris = sqlsrv_fetch_array($pernyataan, SQLSRV_FETCH_ASSOC)) {
                         echo "<tr>";
                         echo "<td>" . $no++ . "</td>";
                         echo "<td>" . $baris['nama_jabatan'] . "</td>";
