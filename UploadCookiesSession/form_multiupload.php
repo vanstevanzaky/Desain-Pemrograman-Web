@@ -6,6 +6,7 @@
     <body>
         <h2>Unggah Dokumen</h2>
         <form action="proses_upload.php" method="post" enctype="multipart/form-data">
+            <!-- Khusus Gambar -->
             <input type="file" name="files[]" multiple="multiple" accept=".jpg, .jpeg, .png"/>
 
             <input type="submit" value="Unggah" />
